@@ -1,0 +1,49 @@
+
+// COLORES y OTRAS PROPIEDADES DE TEXTO
+
+$textDecoration: none;
+$fontH1: 3rem;
+$fontH2: 2rem;
+
+// BORDEs Y PROPIEDADES DE CAJAS GENERICO 
+
+$border: 2px solid #000000;
+$boxShadow:3px 3px 3px 1px;
+$borderRadius: 15px;
+
+
+// MIXINS 
+
+@mixin footer-img {
+    width: 60px;
+    padding: 10px;
+}
+
+@mixin service {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+
+
+// EXTEND
+
+.article{
+    border: $border;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 1px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+// MAP 
+
+$color-txt: (
+        base: #000,
+        second: #7FB5FF,
+        third: #fff,
+)
