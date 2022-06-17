@@ -1,124 +1,78 @@
-.article, .main__index .section__service .article__bano, .main__index .section__service .article__peluqueria, .main__index .section__service .article__estetica {
+.article, .main__index .section__service .article__estetica, .main__index .section__service .article__peluqueria, .main__index .section__service .article__bano {
   border: 2px solid #000000;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 3px 1px;
-          box-shadow: 3px 3px 3px 1px;
+  box-shadow: 3px 3px 3px 1px;
   margin-top: 5px;
   margin-bottom: 15px;
 }
 
 /* MAIN */
 .main__index {
-  display: -ms-grid;
   display: grid;
   gap: 5px;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main__index .main__video {
   margin: 5px 10px 15px 20px;
   padding: 1px;
   border: 2px solid #000000;
   width: 50%;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-column: 1/4;
-  -ms-grid-row: 1;
   grid-row: 1/1;
 }
-
 .main__index .section__service {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  flex-direction: row;
   grid-column: 1/4;
   gap: 15px;
   border-radius: 5px;
   margin: 15px 5px 15px 15px;
   padding: 1px 10px 10px 10px;
 }
-
 @media screen and (max-width: 768px) {
   .section__service {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 .main__contact {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "titulo titulo titulo titulo" "p1 p1 p1 p1" "redes redes redes redes" "form form map map" "form form map map" "form form map map";
+  grid-template-areas: "titulo titulo titulo titulo" "p1 p1 p1 p1" "redes redes redes redes" "form form map map" "form form map map" "form form map map";
   gap: 20px;
 }
-
 .main__contact h1 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 3rem;
   color: #000;
   padding: 10px;
   margin: 10px;
   border: 1px;
   text-shadow: 0px 9px 7px #000000;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: titulo;
 }
-
 .main__contact .section__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   border: 4px solid;
   border-radius: 5px;
   margin: 5px 15px 5px 15px;
   padding: 10px;
   background-image: url(../img/sun-tornado.svg);
   background-size: 100%;
-  -webkit-box-shadow: 0px 13px 10px 2px;
-          box-shadow: 0px 13px 10px 2px;
+  box-shadow: 0px 13px 10px 2px;
   /* FORMULARIO */
 }
-
 .main__contact .section__contact .section__nosotros {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
   background-color: #fff;
   color: #000;
@@ -126,151 +80,87 @@
   padding: 10px;
   border: 1px solid #000000;
   border-radius: 10px;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: p1;
 }
-
 .main__contact .section__contact .section__redes {
   text-align: center;
   margin: 5px;
   padding: 25px;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: redes;
 }
-
 .main__contact .section__contact .section__redes .section__redes__p {
   font-size: 1.5rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   margin: 10px 25px 15px 5px;
   padding: 30px;
   border: 3px;
   border-radius: 2px;
 }
-
 .main__contact .section__contact .section__redes .section__redes__p a {
   text-decoration: none;
   background-color: #7FB5FF;
   color: #000;
   border-radius: 15px;
   padding: 5px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .main__contact .section__contact .section__redes .section__redes__p a:hover {
   font-size: 2rem;
   text-decoration: underline;
 }
-
 .main__contact .section__contact .form__contact__container {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 10px;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 .main__contact .section__contact .form__contact__container .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  flex-direction: column;
+  align-items: flex-end;
   grid-area: form;
   margin: 50px;
 }
-
 .main__contact .section__contact .form__contact__container .form .form-name {
   width: 500px;
 }
-
 .main__contact .section__contact .form__contact__container .form textarea {
   width: 500px;
 }
-
 .main__contact .section__contact .form__contact__container .map {
   height: 400px;
   width: 600px;
   border: 2px solid #000000;
-  -webkit-box-shadow: 1px 5px 5px;
-          box-shadow: 1px 5px 5px;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
+  box-shadow: 1px 5px 5px;
   grid-area: map;
 }
 
 /* MOBILE 768PX */
 @media screen and (max-width: 768px) {
   .main__contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .main__contact .section__contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     border-radius: 5px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .main__contact .section__contact .form__contact__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main__contact .section__contact .form__contact__container .form {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .main__contact .section__contact .form__contact__container .form .form-name {
     width: 100%;
@@ -283,12 +173,183 @@
     height: 50%;
   }
 }
+.main__service .h1__service {
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  padding: 15px;
+  margin: 25px 50px;
+}
+.main__service .dropdown {
+  margin: 25px;
+}
+.main__service .section__service__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+.main__service .section__service__container .service__bano {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+.main__service .section__service__container .service__bano .description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__service .section__service__container .service__bano .description .article__h2__service {
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  padding: 5px;
+}
+.main__service .section__service__container .service__bano .description .article__p__service {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Lora", serif;
+  margin: 20px;
+  padding: 20px;
+  background-image: url(../img/sun-tornado.svg);
+  border: 2px solid #000000;
+  background-size: 100%;
+  border-radius: 15px;
+}
+.main__service .section__service__container .service__bano .article__img__bano {
+  width: 25%;
+  margin: 20px;
+  border: 2px solid;
+}
+.main__service .section__service__container .service__peluqueria {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+.main__service .section__service__container .service__peluqueria .description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__service .section__service__container .service__peluqueria .description .article__h2__service {
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  padding: 5px;
+}
+.main__service .section__service__container .service__peluqueria .description .article__p__service {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Lora", serif;
+  margin: 20px;
+  padding: 20px;
+  background-image: url(../img/sun-tornado.svg);
+  border: 2px solid #000000;
+  background-size: 100%;
+  border-radius: 15px;
+}
+.main__service .section__service__container .service__peluqueria .article__img__peluqueria {
+  width: 70%;
+  margin: 20px;
+  border: 2px solid;
+}
+.main__service .section__service__container .service__estetica {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+.main__service .section__service__container .service__estetica .description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__service .section__service__container .service__estetica .description .article__h2__service {
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  padding: 5px;
+}
+.main__service .section__service__container .service__estetica .description .article__p__service {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Lora", serif;
+  margin: 20px;
+  padding: 20px;
+  background-image: url(../img/sun-tornado.svg);
+  border: 2px solid #000000;
+  background-size: 100%;
+  border-radius: 15px;
+}
+.main__service .section__service__container .service__estetica .article__img__estetica {
+  width: 25%;
+  margin: 20px;
+  border: 2px solid;
+}
 
+/* MEDIA SERVICIO */
+@media screen and (max-width: 768px) {
+  .main__service {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__service .h1__service {
+    font-size: 2rem;
+  }
+  .main__service .section__service__container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+  }
+  .main__service .section__service__container .service__bano {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__service .section__service__container .service__bano .article__p__service {
+    font-size: 1em;
+  }
+  .main__service .section__service__container .service__bano .article__img__bano {
+    width: 80%;
+  }
+  .main__service .section__service__container .service__peluqueria {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main__service .section__service__container .service__peluqueria .article__p__service {
+    font-size: 1em;
+  }
+  .main__service .section__service__container .service__estetica {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__service .section__service__container .service__estetica .article__p__service {
+    font-size: 1em;
+  }
+  .main__service .section__service__container .service__estetica .article__img__estetica {
+    width: 80%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -298,39 +359,25 @@ body {
 
 /* HEADER + NAV */
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 header .navbar-expand-lg .navbar-collapse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
   font-size: 2rem;
 }
-
 header .header__logo {
   padding: 25px 10px 25px 10px;
   margin: 10px;
 }
-
 header .header__logo .header__img {
   text-decoration: none;
 }
-
 header .header__logo .header__img h2 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 3rem;
   color: #000;
   margin: 5px 10px 5px 10px;
@@ -339,175 +386,110 @@ header .header__logo .header__img h2 {
   text-shadow: -1px 7px 7px;
   text-align: center;
   border: 5px solid #000000;
-  -webkit-box-shadow: 0px 3px 20px 5px;
-          box-shadow: 0px 3px 20px 5px;
+  box-shadow: 0px 3px 20px 5px;
 }
-
 header .header__logo .header__img img {
   height: 5em;
   width: 5em;
   border: 2px solid #000000;
   margin: 2px 0px 5px 5px;
-  -webkit-box-shadow: -8px -1px 17px 5px #000000;
-          box-shadow: -8px -1px 17px 5px #000000;
+  box-shadow: -8px -1px 17px 5px #000000;
 }
 
 /* FOOTER */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#abe9cd), color-stop(74%, #3eadcf));
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(180deg, #abe9cd 0%, #3eadcf 74%);
   margin-top: 15%;
 }
-
 footer .ubicacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 25px;
   padding: 15px;
 }
-
 footer .ubicacion .direccion {
   margin: 15px;
 }
-
 footer .ubicacion .direccion h4 {
   font-size: 2rem;
   padding: 10px;
 }
-
 footer .ubicacion .direccion div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 footer .ubicacion .direccion div p {
   text-align: center;
   padding: 20px;
   font-size: 1rem;
 }
-
 footer .ubicacion .direccion div img {
   width: 60px;
   padding: 10px;
 }
-
 footer .ubicacion .horario {
   margin: 15px;
 }
-
 footer .ubicacion .horario h4 {
   font-size: 2rem;
   padding: 10px;
 }
-
 footer .ubicacion .horario div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 footer .ubicacion .horario div p {
   text-align: center;
   padding: 20px;
   font-size: 1rem;
 }
-
 footer .ubicacion .horario div img {
   width: 60px;
   padding: 10px;
 }
-
 footer .ubicacion .links {
   margin: 15px;
 }
-
 footer .ubicacion .links h4 {
   font-size: 2rem;
   padding: 10px;
 }
-
 footer .ubicacion .links ul {
   list-style: none;
 }
-
 footer .ubicacion .links ul li {
   font-size: 1rem;
 }
-
 footer .ubicacion .links ul li a {
   text-decoration: none;
   color: #000;
 }
-
 footer .ubicacion .links ul li :hover {
   border: 2px solid #000000;
   font-size: 1.2rem;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
-
 footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
-
 footer div h3 {
   padding: 10px;
   font-size: 2rem;
 }
-
 footer div .footer__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 footer div .footer__list img {
   width: 60px;
   padding: 10px;
@@ -517,21 +499,11 @@ footer div .footer__list img {
 @media screen and (max-width: 768px) {
   /* HEADER */
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
   header .header__logo .header__img h2 {
     margin: 5px 5px;
@@ -539,23 +511,15 @@ footer div .footer__list img {
     text-shadow: 5px 7px 5px;
     padding: 5px;
     border: 1px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   header nav ul li {
     font-size: 50%;
   }
+
   footer .ubicacion {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

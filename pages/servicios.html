@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../img/logo.png" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="#">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Orelega+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -63,7 +63,11 @@
 </nav>
   </header>
   <main class="main__service">
-    <h1 class="main__h2">Los Servicios que ofrecemos son:</h1>
+    
+    <h1 class="h1__service">Los Servicios que ofrecemos son:</h1>
+    
+    <!--DROPDOWN-->
+
     <div class="dropdown">
       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
         Contactanos
@@ -75,7 +79,11 @@
         <li><a class="dropdown-item" href="./galeria.html">Nuestra Galeria</a></li>
       </ul>
     </div>
+    
+    <!--SECCIONES-->
+
     <section class="section__service__container">
+      
       <article class="service__bano" id="section__bano" data-aos="flip-up">
         <img src="../img/perroDucha2.jpg" alt="Baño" title="Baño" class="article__img__bano"/>
         <div class="description">
@@ -88,7 +96,8 @@
         </p>
       </div>
       </article>
-      <article class="service__peluqueria" id="section__peluqueria" data-aos="fade-up"
+      
+      <article class="service__peluqueria container-fluid" id="section__peluqueria" data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"> 
         <div class="description">
           <h2 class="article__h2__service">Peluqueria</h2>
@@ -102,6 +111,7 @@
         </div>
         <img src="../img/cepillo.png" alt="Peluqueria" title="Corte de pelo" class="article__img__peluqueria"/>
       </article>
+      
       <article class="service__estetica" id="section__estetica" data-aos="fade-up"
       data-aos-anchor-placement="bottom-bottom">
         <img src="../img/estetica.jpg" alt="Estética" title="Estética" class="article__img__estetica"/>
