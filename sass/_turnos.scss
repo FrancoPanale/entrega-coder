@@ -1,0 +1,72 @@
+/* TURNOS */
+
+.section__turn{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 15px;
+    padding: 15px;
+    .turn__gral{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        .turn__img{
+            width: 50%;
+            box-shadow: $boxShadow;
+            border: 5px solid #000;
+            margin: 15px;
+            border-radius: $borderRadius;
+        }
+        p{
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 15px;
+            margin: 5px;
+            background-color: map-get($color-txt , third );
+            border-radius: 5px;
+            box-shadow: $boxShadow;
+        }
+    }
+    .turn__h1{
+            font-size: $fontH1;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 15px;
+            padding: 15px;
+    }
+    .form__contact__turn{
+            margin:15px ;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            .input__turn{
+                font-size: 1em;
+                box-shadow: $boxShadow;
+                margin: 10px;
+                padding: 5px;
+            }
+        }
+    
+}
+
+
+/* MOBILE 768PX */ 
+
+@media screen and (max-width: 768px) {
+    .section__turn{
+    .turn__gral{
+        flex-direction: column;
+        align-items: center;
+        .turn__img{
+            width: 80%;
+        }
+        p{
+        font-size: 1rem;
+        }
+    }
+    .turn__h1{
+        font-size: 1.5rem;
+    }
+}
+}
