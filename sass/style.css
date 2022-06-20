@@ -413,6 +413,77 @@
     font-size: 1.5rem;
   }
 }
+/* GALERIA */
+.section__galery {
+  color: #000;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__galery h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 1px 6px 6px #000;
+  padding: 10px;
+  margin: 5px;
+}
+.section__galery p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #000000;
+  box-shadow: 5px 10px 25px;
+  letter-spacing: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.section__galery .carrousel {
+  width: 60%;
+  margin: 10vh;
+  border: 2px solid #000000;
+}
+.section__galery .galery__submit {
+  text-align: center;
+  border-radius: 25px;
+  background-image: url(../img/sun-tornado.svg);
+  background-size: 100%;
+  box-shadow: 5px 5px 5px 1px;
+  color: #000;
+  margin: 10vh;
+  padding: 10px;
+  width: 100%;
+}
+.section__galery .galery__submit h2 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px;
+}
+.section__galery .galery__submit .form__send {
+  font-size: 1rem;
+}
+
+/* MOBILE 768X */
+@media screen and (max-width: 768px) {
+  .section__galery h1 {
+    font-size: 2rem;
+  }
+  .section__galery p {
+    font-size: 100%;
+  }
+  .section__galery .carrousel {
+    width: 100%;
+  }
+  .section__galery .galery__submit h2 {
+    font-size: 1.5rem;
+  }
+  .section__galery .galery__submit .form__send {
+    font-size: 0.5rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
