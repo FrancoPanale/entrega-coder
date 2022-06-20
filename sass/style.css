@@ -570,6 +570,10 @@ footer .ubicacion .direccion div p {
 footer .ubicacion .direccion div img {
   width: 60px;
   padding: 10px;
+  transition: all 0.5s;
+}
+footer .ubicacion .direccion div img:hover {
+  width: 80px;
 }
 footer .ubicacion .horario {
   margin: 15px;
@@ -590,6 +594,10 @@ footer .ubicacion .horario div p {
 footer .ubicacion .horario div img {
   width: 60px;
   padding: 10px;
+  transition: all 0.5s;
+}
+footer .ubicacion .horario div img:hover {
+  width: 80px;
 }
 footer .ubicacion .links {
   margin: 15px;
@@ -631,6 +639,10 @@ footer div .footer__list {
 footer div .footer__list img {
   width: 60px;
   padding: 10px;
+  transition: all 0.5s;
+}
+footer div .footer__list img:hover {
+  width: 90px;
 }
 
 /* MEDIA QUERY 768PX */

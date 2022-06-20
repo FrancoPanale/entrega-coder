@@ -101,6 +101,10 @@ footer{
             }
                 img{
                     @include footer-img;
+                    transition: all 0.5s;
+                }
+                img:hover{
+                    width: 80px;
                 }
         }
     }    
@@ -122,6 +126,10 @@ footer{
             }
             img{
                 @include footer-img;
+                transition: all 0.5s;
+            }
+            img:hover{
+                width: 80px;
             }
         }
     }
@@ -166,7 +174,10 @@ footer{
         
             img{
                 @include footer-img;
-                
+                transition: all 0.5s;
+            }
+            img:hover{
+                width: 90px;
             }    
         }
     }
