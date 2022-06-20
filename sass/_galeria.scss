@@ -29,6 +29,10 @@
         width: 60%;
         margin: 10vh;
         border: $border;
+        transition: all 1s;
+    }
+    .carrousel:hover{
+        box-shadow: 0px 10px 11px 5px ;
     }
     .galery__submit{
         text-align: center;
@@ -64,6 +68,9 @@
         }
         .carrousel{
             width: 100%;
+        }
+        .carrousel:hover{
+            box-shadow: none;
         }
         .galery__submit{
             h2{

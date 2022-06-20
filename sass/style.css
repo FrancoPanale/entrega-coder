@@ -465,6 +465,10 @@
   width: 60%;
   margin: 10vh;
   border: 2px solid #000000;
+  transition: all 1s;
+}
+.section__galery .carrousel:hover {
+  box-shadow: 0px 10px 11px 5px;
 }
 .section__galery .galery__submit {
   text-align: center;
@@ -497,6 +501,9 @@
   }
   .section__galery .carrousel {
     width: 100%;
+  }
+  .section__galery .carrousel:hover {
+    box-shadow: none;
   }
   .section__galery .galery__submit h2 {
     font-size: 1.5rem;
