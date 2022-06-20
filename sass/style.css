@@ -209,7 +209,7 @@
 }
 .main__service .section__service__container .service__bano .description .article__h2__service {
   text-align: center;
-  font-size: 2em;
+  font-size: 2rem;
   margin: 5px;
   padding: 5px;
 }
@@ -228,6 +228,10 @@
   width: 25%;
   margin: 20px;
   border: 2px solid;
+  transition: width 1s;
+}
+.main__service .section__service__container .service__bano .article__img__bano:hover {
+  width: 35%;
 }
 .main__service .section__service__container .service__peluqueria {
   display: flex;
@@ -266,6 +270,10 @@
   width: 70%;
   margin: 20px;
   border: 2px solid;
+  transition: width 1s;
+}
+.main__service .section__service__container .service__peluqueria .article__img__peluqueria:hover {
+  width: 100%;
 }
 .main__service .section__service__container .service__estetica {
   display: flex;
@@ -304,6 +312,10 @@
   width: 25%;
   margin: 20px;
   border: 2px solid;
+  transition: width 1s;
+}
+.main__service .section__service__container .service__estetica .article__img__estetica:hover {
+  width: 35%;
 }
 
 /* MEDIA SERVICIO */
@@ -330,12 +342,18 @@
   .main__service .section__service__container .service__bano .article__img__bano {
     width: 80%;
   }
+  .main__service .section__service__container .service__bano .article__img__bano:hover {
+    width: 80%;
+  }
   .main__service .section__service__container .service__peluqueria {
     display: flex;
     flex-direction: column-reverse;
   }
   .main__service .section__service__container .service__peluqueria .article__p__service {
     font-size: 1em;
+  }
+  .main__service .section__service__container .service__peluqueria .article__img__peluqueria:hover {
+    width: 70%;
   }
   .main__service .section__service__container .service__estetica {
     display: flex;
@@ -345,6 +363,9 @@
     font-size: 1em;
   }
   .main__service .section__service__container .service__estetica .article__img__estetica {
+    width: 80%;
+  }
+  .main__service .section__service__container .service__estetica .article__img__estetica:hover {
     width: 80%;
   }
 }

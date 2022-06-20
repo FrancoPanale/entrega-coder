@@ -33,7 +33,7 @@
                 justify-content: center;
                 .article__h2__service{
                     text-align: center;
-                    font-size: 2em;
+                    font-size: $fontH2;
                     margin: 5px;
                     padding: 5px;
                 }
@@ -53,6 +53,10 @@
                     width: 25%;
                     margin: 20px;
                     border: 2px solid;
+                    transition: width 1s;
+                }
+                .article__img__bano:hover{
+                    width: 35%;
                 }
             
             
@@ -93,6 +97,10 @@
                 width: 70%;
                 margin: 20px;
                 border: 2px solid;
+                transition: width 1s;
+            }
+            .article__img__peluqueria:hover{
+                width: 100%;
             }            
         }
         .service__estetica{
@@ -131,6 +139,10 @@
                 width: 25%;
                 margin: 20px;
                 border: 2px solid;
+                transition: width 1s;
+            }
+            .article__img__estetica:hover{
+                width: 35%;
             }
         }
     }
@@ -159,12 +171,18 @@
             .article__img__bano{
                 width: 80%;
             }
+            .article__img__bano:hover{
+                width: 80%;
+            }
         }
         .service__peluqueria{
             display: flex;
             flex-direction: column-reverse;
             .article__p__service{
                 font-size: 1em;
+            }
+            .article__img__peluqueria:hover{
+                width: 70%;
             }
         }
         .service__estetica{
@@ -176,6 +194,10 @@
             .article__img__estetica{
                 width: 80%;
             }
+            .article__img__estetica:hover{
+                width: 80% ;
+            }
+
         }
     }
 }
