@@ -28,7 +28,7 @@ body{
 header{
         display: flex;
         padding: 15px;
-        flex-direction: column;
+        flex-direction: row;
         .navbar-expand-lg .navbar-collapse {
             flex-direction: column;
             flex-wrap: wrap;
@@ -217,6 +217,9 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    .links{
+        display: none;
+    }
     }
 }
 }
