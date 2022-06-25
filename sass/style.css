@@ -700,4 +700,7 @@ footer div .footer__list img:hover {
     flex-direction: column;
     align-items: center;
   }
+  footer .ubicacion .links {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
