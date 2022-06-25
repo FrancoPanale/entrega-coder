@@ -28,7 +28,7 @@ body{
 header{
         display: flex;
         padding: 15px;
-        flex-direction: row;
+        flex-direction: column;
         .navbar-expand-lg .navbar-collapse {
             flex-direction: column;
             flex-wrap: wrap;
@@ -223,3 +223,7 @@ footer{
     }
 }
 }
+
+
+
+

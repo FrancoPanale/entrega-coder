@@ -15,7 +15,6 @@
     <meta name="description" content="Aca vas a encontrar una galeria de fotos, contactos, turnos para tu mascota, hacemos peluqueria y baño para perros que esta manejada por sus dueños">
     
     <meta name="keywords" content="Peluqueria de perros, Perros, baño de perros, mascotas, contactos , direccion, ubicacion, telefono, mensaje  ">
-
     <!--SASS-->
     <link rel="stylesheet" href="../sass/style.css">
     
@@ -88,20 +87,20 @@
             <!--FORMULARIO CON BOOTSTRAP-->
 
             <div class="form__contact__container">
-                <form action="enviar.php" method="get" enctype="text/plain" >
+                <form action="../php/form.php" method="POST" enctype="text/plain" >
                     
                     <div class="form">
                     <div>
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" id="name" placeholder="Ingrese su nombre" required class="form-control form-name">
+                        <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required class="form-control form-name">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control form-name" id="exampleFormControlInput1" placeholder="Ingrese su email">
+                        <input type="email" name="email" class="form-control form-name" id="exampleFormControlInput1" placeholder="Ingrese su email">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Consultas</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="textarea"></textarea>
                     </div>
                     <div>
                         <button class="btn btn-success" type="submit">Enviar</button>

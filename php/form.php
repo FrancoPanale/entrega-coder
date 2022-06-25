@@ -12,6 +12,7 @@ $mensaje = "Mensaje:" . $_POST['mensaje'] . " /r/n";
 $mensaje = "Enviado el" .date('d/m/y', time());
 
 //DESTINO:
+
 $para = 'francopanale@gmail.com';
 $asunto = 'Enviado desde la Web';
 
@@ -20,6 +21,7 @@ $asunto = 'Enviado desde la Web';
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 // REEDIRECCION
+
 $header('location:send.html');
 
 ?>
