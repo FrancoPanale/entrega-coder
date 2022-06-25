@@ -29,6 +29,9 @@ header{
         display: flex;
         padding: 15px;
         flex-direction: column;
+        .container-fluid{
+            margin-left: 15%;
+        }
         .navbar-expand-lg .navbar-collapse {
             flex-direction: column;
             flex-wrap: wrap;
@@ -57,7 +60,7 @@ header{
                     height: 5em;
                     width: 5em;
                     border: $border;
-                    margin: 2px 0px 5px 5px;
+                    margin-left: 20%;
                     box-shadow: -8px -1px 17px 5px #000000;
                 }            
             }
@@ -150,8 +153,8 @@ footer{
             }
         }
         li :hover{
-            border: $border;
-            font-size: 1.2rem;
+            border-bottom: 3px solid ;
+            border-radius: 5px;
             transition: all 1s;
         }
         }
@@ -228,9 +231,24 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-    .links{
+        .direccion{
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+        .horario{
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+        .links{
         display: none;
     }
+    }
+    div{
+        h3{
+            font-size: 1.4rem;
+        }
     }
 }
 }

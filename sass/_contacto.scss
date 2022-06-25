@@ -119,6 +119,9 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    h1{
+        font-size: 1.5rem;
+    }
     .section__contact{
         display: flex;
         flex-direction: column;
@@ -127,7 +130,16 @@
         border: 1px solid;
         border-radius: 5px;
         box-shadow:none;
-        
+        .section__nosotros{
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .section__redes{
+            .section__redes__p{
+                font-size: 1.2rem;
+            }
+        }
         .form__contact__container{
             flex-direction: column;
             
