@@ -538,9 +538,6 @@ header {
   padding: 15px;
   flex-direction: column;
 }
-header .container-fluid {
-  margin-left: 15%;
-}
 header .navbar-expand-lg .navbar-collapse {
   flex-direction: column;
   flex-wrap: wrap;
@@ -570,7 +567,6 @@ header .header__logo .header__img img {
   height: 5em;
   width: 5em;
   border: 2px solid #000000;
-  margin-left: 20%;
   box-shadow: -8px -1px 17px 5px #000000;
 }
 
@@ -694,6 +690,12 @@ footer div .footer__list img:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+  }
+  header .container-fluid {
+    margin-left: 15%;
+  }
+  header .header__logo .header__img img {
+    margin-left: 20%;
   }
   header .header__logo .header__img h2 {
     margin: 5px 5px;
