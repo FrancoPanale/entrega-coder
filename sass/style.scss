@@ -29,9 +29,6 @@ header{
         display: flex;
         padding: 15px;
         flex-direction: column;
-        .container-fluid{
-            margin-left: 15%;
-        }
         .navbar-expand-lg .navbar-collapse {
             flex-direction: column;
             flex-wrap: wrap;
@@ -60,7 +57,7 @@ header{
                     height: 5em;
                     width: 5em;
                     border: $border;
-                    margin-left: 20%;
+                    margin-left: 10px;
                     box-shadow: -8px -1px 17px 5px #000000;
                 }            
             }

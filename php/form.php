@@ -2,14 +2,14 @@
 
 $nombre = $_POST['name'];
 $mail = $_POST['email'];
-$mensaje = $_POST['textarea'];
+$mensaje = $_POST['mensaje'];
 
 // MENSAJE
 
 $mensaje = "Este mensaje fue enviado por:" . $nombre . " ,/r/n";
-$mensaje .= "Su e-mail es:" . $mail . " /r/n";
-$mensaje .= "Mensaje:" . $_POST['mensaje'] . " /r/n";
-$mensaje .= "Enviado el" . date('d/m/y', time());
+$mensaje .= "Su e-mail es: " . $mail . " /r/n";
+$mensaje .= "Mensaje: " . $_POST['mensaje'] . " /r/n";
+$mensaje .= "Enviado el " . date('d/m/y', time());
 
 //DESTINO:
 
