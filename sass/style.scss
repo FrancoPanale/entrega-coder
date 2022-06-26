@@ -199,7 +199,9 @@ header{
     flex-wrap: wrap;
     align-items: center;
     .header__logo{
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .header__img{
         img{
             margin-left: 20%;
