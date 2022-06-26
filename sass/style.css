@@ -150,6 +150,7 @@
   }
   .main__contact h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
   .main__contact .section__contact {
     display: flex;
