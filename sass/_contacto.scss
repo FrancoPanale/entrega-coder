@@ -138,10 +138,13 @@
         .section__redes{
             .section__redes__p{
                 font-size: 1.2rem;
+                padding: 10px;
+                margin: 5px;
             }
         }
         .form__contact__container{
             flex-direction: column;
+            margin-top: -70px;
             
             .form{
                 align-items: center;
@@ -153,8 +156,8 @@
                 }
             }
         .map{
-            width: 50%;
-            height: 50%;
+            width: 70%;
+            height: 100%;
         }
         }
     
