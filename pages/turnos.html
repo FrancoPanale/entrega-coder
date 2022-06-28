@@ -81,28 +81,28 @@
     
     <!--FORMULARIO DE TURNO-->    
     <h1 class="turn__h1">Reserva Turno aca!</h1>
-        <form action="enviar.php" method="get" enctype="text/plain" class="form__contact__turn">
+        <form action="https://formspree.io/f/xdobvyak" method="POST"  class="form__contact__turn">
           
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control input__turn" placeholder="Nombre de tu Mascota" aria-label="First name" required>
+              <input type="text" name="name" class="form-control input__turn" placeholder="Nombre de tu Mascota" aria-label="First name" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control input__turn" placeholder="Numero de Contacto" aria-label="Last name required">
+              <input type="text" name="phone" class="form-control input__turn" placeholder="Numero de Contacto" aria-label="Last name required">
             </div>
           </div>
           <div class="hour">
             <label for="day"></label>
             <input type="date"  name="day" class="input__turn form-control" required>
             <label for="hora"></label>
-            <input type="time" value="09:00"  class="input__turn form-control" min="09:00" max="18:00" required>
+            <input type="time" name="hour" value="09:00"  class="input__turn form-control" min="09:00" max="18:00" required>
           </div>
 
-          <select class="form-select input__turn" aria-label="Default select example">
+          <select name="upload" class="form-select input__turn" aria-label="Default select example">
             <option selected>¿Que le hacemos a tu Mascota?</option>
-            <option value="1">Baño</option>
-            <option value="2">Corte de Pelo</option>
-            <option value="3">Baño y Corte de Pelo</option>
+            <option value="Baño">Baño</option>
+            <option value="Corte de pelo">Corte de Pelo</option>
+            <option value="Baño y Corte de Pelo">Baño y Corte de Pelo</option>
           </select>
           <div>
             <button class="btn btn-outline-secondary" type="submit">Reservar</button>

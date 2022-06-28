@@ -106,10 +106,13 @@
       </div>
       <div class="galery__submit">    
         <h2>Mandanos tu foto</h2>
-          <form action="enviar.php" method="get" enctype="text/plain" class="form__send">
+          <form method="POST" action="https://formspree.io/f/xdobvyak" class="form__send">
             <label for="adjunta">Adjunta tu foto :</label>
-              <input type="file" class="btn btn-outline-secondary" > 
-          </form>
+              <input type="file"  accept="image/png, image/jpeg" name="attachment"> 
+              <div class="btn-photo">
+                <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+            </div>
+            </form>
       </div>    
       </section>
   </main>
